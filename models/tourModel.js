@@ -38,3 +38,5 @@ const tourModel = new mongoose.schema({
 });
 
 const tourInfo = mongoose.model('tourInfo', tourModel);
+
+module.export = tourInfo;
