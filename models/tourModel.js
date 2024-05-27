@@ -13,13 +13,17 @@ const tourModel = new mongoose.schema({
     unique: true,
     trim: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
   numberOfDays: {
     type: String,
     require: [true, 'A tour must always have defined number of dates'],
   },
   priceOfTour: {
     type: Number,
-    require: [true],
+    require: [true, 'A tour must always have a price'],
     trim: true,
   },
   rating: {
@@ -32,6 +36,7 @@ const tourModel = new mongoose.schema({
   },
   descriptionTour: {
     type: String,
+    require: [true, 'A tour must always have a description'],
     unique: true,
     trim: true,
   },

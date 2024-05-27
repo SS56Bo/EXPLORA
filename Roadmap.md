@@ -1,4 +1,5 @@
 1 -> Create Schema model [DONE]
-2 -> Create Tour Controller
-3 -> Create Tour Router
-4 -> Create main server file
+2 -> Create Tour Controller [Done]
+3 -> Create Tour Router [Done]
+4 -> Create main server file [Done]
+5 -> Define Routes in TourRoutes [Done]
